@@ -10,12 +10,6 @@ import com.testapp.demo.modal.response.GenericResponse;
 
 @RestController
 public class InitController {
-	@GetMapping("")
-	public Map<String, String> init() {
-		Map<String, String> result = new HashMap<String, String>();
-		result.put("result", "app is running");
-		return result;
-	}
 
 	@GetMapping("button/fetch")
 	public GenericResponse fetchbutton() {
